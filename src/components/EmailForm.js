@@ -19,18 +19,7 @@ export class EmailForm extends Component {
   render() {
     const { message } = this.state;
     return (
-      <form id="signup-form" onSubmit={this.onSubmit} method="post" action="#">
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email Address"
-        />
-        <input type="submit" value="Sign Up" />
-        <span className={`${message ? 'visible success' : ''} message`}>
-          {message}
-        </span>
-      </form>
+      <a class="sign-up button" href="https://avi47.typeform.com/to/MvQhMu">Sign Up</a>
     );
   }
 }
